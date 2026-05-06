@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - StepStyle</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>StepStyle</h1>
+            <p>Premium Footwear</p>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Shop</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button onclick="toggleDarkMode()" id="darkBtn">
+            Dark Mode
+        </button>
+    </header>
+
+    <section id="shop">
+        <h2>Our Collection</h2>
+
+        <div class="filters">
+            <button onclick="filterProducts('all')"
+            class="filter-btn active" id="btn-all">
+            All</button>
+            <button onclick="filterProducts('sneakers')"
+            class="filter-btn" id="btn-sneakers">
+            Sneakers</button>
+            <button onclick="filterProducts('running')"
+            class="filter-btn" id="btn-running">
+            Running</button>
+            <button onclick="filterProducts('formal')"
+            class="filter-btn" id="btn-formal">
+            Formal</button>
+        </div>
+
+        <div class="products" id="productGrid">
+
+            <div class="product-card"
+            data-category="sneakers">
+                <img src="images/shoe1.jpg"
+                alt="Classic Sneakers">
+                <h3>Classic Sneakers</h3>
+                <p>Perfect for everyday wear</p>
+                <span class="price">$79.99</span>
+                <button onclick="addToCart('Classic Sneakers')"
+                class="btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card"
+            data-category="running">
+                <img src="images/shoe2.jpg"
+                alt="Running Pro">
+                <h3>Running Pro</h3>
+                <p>Built for performance</p>
+                <span class="price">$99.99</span>
+                <button onclick="addToCart('Running Pro')"
+                class="btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card"
+            data-category="formal">
+                <img src="images/shoe3.jpg"
+                alt="Formal Elite">
+                <h3>Formal Elite</h3>
+                <p>Look sharp every day</p>
+                <span class="price">$129.99</span>
+                <button onclick="addToCart('Formal Elite')"
+                class="btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card"
+            data-category="sneakers">
+                <img src="images/shoe4.jpg"
+                alt="Urban Street">
+                <h3>Urban Street</h3>
+                <p>Street style redefined</p>
+                <span class="price">$89.99</span>
+                <button onclick="addToCart('Urban Street')"
+                class="btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card"
+            data-category="running">
+                <img src="images/shoe5.jpg"
+                alt="Speed Boost">
+                <h3>Speed Boost</h3>
+                <p>Maximum speed and comfort</p>
+                <span class="price">$109.99</span>
+                <button onclick="addToCart('Speed Boost')"
+                class="btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card"
+            data-category="formal">
+                <img src="images/shoe6.jpg"
+                alt="Office Classic">
+                <h3>Office Classic</h3>
+                <p>Professional and elegant</p>
+                <span class="price">$119.99</span>
+                <button onclick="addToCart('Office Classic')"
+                class="btn">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="cartMsg"></div>
+
+    <footer>
+        <p>2026 StepStyle Premium Footwear</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Shop</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
