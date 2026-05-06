@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - StepStyle</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>StepStyle</h1>
+            <p>Premium Footwear</p>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Shop</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button onclick="toggleDarkMode()" id="darkBtn">
+            Dark Mode
+        </button>
+    </header>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question? We would love 
+        to hear from you!</p>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <p>📧 support@stepstyle.com</p>
+                <p>📞 +1 234 567 8900</p>
+                <p>📍 123 Fashion Street NY</p>
+                <p>⏰ Mon-Fri: 9AM - 6PM</p>
+            </div>
+
+            <form onsubmit="return validateForm(event)">
+                <input type="text" id="name"
+                placeholder="Your Name">
+                <input type="email" id="email"
+                placeholder="Your Email">
+                <input type="text" id="subject"
+                placeholder="Subject">
+                <textarea id="message"
+                placeholder="Your Message"></textarea>
+                <div id="errorMsg"
+                style="color:red"></div>
+                <div id="successMsg"
+                style="color:green"></div>
+                <button type="submit"
+                class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>2026 StepStyle Premium Footwear</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Shop</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
